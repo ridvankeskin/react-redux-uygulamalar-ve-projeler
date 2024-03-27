@@ -5,7 +5,7 @@ const initialState = {
 };
 
 const userReducer = (state = initialState, action) => {
-  // aksiyonun type ına göre gerekli güncellemeyi yap
+  // aksiyonun type'ına göre gerekli güncellemeyi yap
   switch (action.type) {
     case "EKLE":
       return state;
@@ -13,7 +13,7 @@ const userReducer = (state = initialState, action) => {
     case "CIKAR":
       return state;
 
-    // eğer gelen aksiyon yukardakilerden biri değilse varolan state i koru.
+    // eğer gelen aksiyon yukarıdakilerden biri değilse varolan state'i koru
     default:
       return state;
   }

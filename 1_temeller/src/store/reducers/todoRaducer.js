@@ -19,13 +19,30 @@ const initialState = {
 const todoReducer = (state = initialState, action) => {
   // aksiyonun type ına göre gerekli güncellemeyi yap
   switch (action.type) {
-    case "EKLE":
-      return state;
+    // eğer ADD aksiyonu çalışırsa:
+    case "ADD":
+      return {
+        ...state, // state deki diğer değerleri muhafaza et
+        todos: state.todos.concat(action.payload), // ekle
+      }; //
 
-    case "CIKAR":
-      return state;
+    // eğer delete aksiyonu çalışırsa
+    case "DELETE":
+      // diziden silinecek elemanı kaldır
+      const filtred = state.todos.filter((i) => i.id !== action.payload);
+      // reducer da tutulan todos değerini güncelle
+      return { ...state, todos: filtred };
 
-    // eğer gelen aksiyon yukardakilerden biri değilse varolan state i koru.
+    // eğer UPDATE aksiyonu çalışırsa devreye girmeli
+    case "UPDATE":
+      // dizideki eski elemanın yerine gelen action payload ile gelen elemanı koy
+      const updatedArrr = state.todos.map((i) =>
+        i.id === action.payload.id ? action.payload : i
+      );
+
+      // reducer'da tutulan todosu güncelle
+      return { ...state, todos: updatedArrr };
+    // eğer gelen aksiyon yukardakilerden biri değilse state i koru.
     default:
       return state;
   }
