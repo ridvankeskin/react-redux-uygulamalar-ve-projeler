@@ -1,6 +1,8 @@
 import Modal from "../components/Modal";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import ActionTypes from "../store/actionTypes";
+import { deleteTodo, updateTodo } from "../store/actions/todoActions";
 
 const TodoCard = ({ todo }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +10,7 @@ const TodoCard = ({ todo }) => {
   const dispatch = useDispatch();
   // silme aksiyonunu reducer a ilet
   const handleDelete = () => {
-    dispatch({
-      type: "DELETE",
-      payload: todo.id,
-    });
+    dispatch(deleteTodo(todo.id));
   };
   // is_done değerini tersine çevir
   const toggleIsDone = () => {
@@ -19,10 +18,7 @@ const TodoCard = ({ todo }) => {
     const updated = { ...todo, is_done: !todo.is_done };
 
     // store u güncelleneceğine reducer a haber ver
-    dispatch({
-      type: "UPDATE",
-      payload: updated,
-    });
+    dispatch(updateTodo(updated));
   };
   return (
     <div className="border shadow-lg p-4 my-5">

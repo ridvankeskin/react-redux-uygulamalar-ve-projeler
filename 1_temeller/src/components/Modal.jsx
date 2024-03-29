@@ -1,12 +1,13 @@
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
+import { updateTodo } from "../store/actions/todoActions";
 
 const Modal = ({ close, todo }) => {
   const inputRef = useRef();
 
   const dispatch = useDispatch();
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     // 1.aşama) inputtaki değeri al
     const newText = inputRef.current.value;
 
@@ -18,10 +19,7 @@ const Modal = ({ close, todo }) => {
     };
 
     // 3.aşama) reducer a elemanın güncelleneceğini haber ver
-    dispatch({
-      type: "UPDATE",
-      payload: updatedTodo,
-    });
+    dispatch(updateTodo(updatedTodo));
 
     // 4.aşama) modol ı kapat
     close();

@@ -1,3 +1,5 @@
+import ActionTypes from "../actionTypes";
+
 /*
 ! reducer
 * state in nasıl değişeceğine karar verir.
@@ -20,21 +22,21 @@ const todoReducer = (state = initialState, action) => {
   // aksiyonun type ına göre gerekli güncellemeyi yap
   switch (action.type) {
     // eğer ADD aksiyonu çalışırsa:
-    case "ADD":
+    case ActionTypes.ADD:
       return {
         ...state, // state deki diğer değerleri muhafaza et
         todos: state.todos.concat(action.payload), // ekle
       }; //
 
     // eğer delete aksiyonu çalışırsa
-    case "DELETE":
+    case ActionTypes.DELETE:
       // diziden silinecek elemanı kaldır
       const filtred = state.todos.filter((i) => i.id !== action.payload);
       // reducer da tutulan todos değerini güncelle
       return { ...state, todos: filtred };
 
     // eğer UPDATE aksiyonu çalışırsa devreye girmeli
-    case "UPDATE":
+    case ActionTypes.UPDATE:
       // dizideki eski elemanın yerine gelen action payload ile gelen elemanı koy
       const updatedArrr = state.todos.map((i) =>
         i.id === action.payload.id ? action.payload : i
@@ -42,6 +44,7 @@ const todoReducer = (state = initialState, action) => {
 
       // reducer'da tutulan todosu güncelle
       return { ...state, todos: updatedArrr };
+
     // eğer gelen aksiyon yukardakilerden biri değilse state i koru.
     default:
       return state;

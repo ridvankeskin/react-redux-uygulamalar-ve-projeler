@@ -1,5 +1,6 @@
 import { v4 } from "uuid";
 import { useDispatch } from "react-redux";
+import { addTodo } from "../store/actions/todoActions";
 
 const AddForm = () => {
   // bu bileşen içerisinde dispatch methodunu kullanmamızı sağlar
@@ -19,10 +20,7 @@ const AddForm = () => {
 
     // veriyi store a kaydet
 
-    dispatch({
-      type: "ADD",
-      payload: newTodo,
-    });
+    dispatch(addTodo(newTodo));
 
     e.target.reset();
   };
