@@ -9,17 +9,17 @@
 
 import { combineReducers, createStore } from "redux";
 import userReducer from "./reducers/userReducer";
-import todoReducer from "./reducers/todoRaducer";
+import todoReducer from "./reducers/todoReducer";
 
 // birden fazla reducer varsa bunları birleştireceğiz
 
-const rootReducer = combineReducers({
+const rootRaducer = combineReducers({
   todoReducer,
   userReducer,
 });
 
 // store oluşturulur
-const store = createStore(rootReducer);
+const store = createStore(rootRaducer);
 
 // projeye tanıtmak için export ediyoruz
 export default store;

@@ -7,11 +7,12 @@ const ActionTypes = {
   ADD: "ADD",
   DELETE: "DELETE",
   UPDATE: "UPDATE",
+  SET: "SET",
 };
 
 export default ActionTypes;
 
-// 2. yöntem
+// 2. YÖNTEM
 export const ADD = "ADD";
 export const DELETE = "DELETE";
 export const UPDATE = "UPDATE";
