@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Izgara Somon",
+      "desc": "Taze somon filetosu, ızgara sebzelerle servis edilir.",
+      "category": "Deniz Ürünleri",
+      "price": 35.99,
+      "rating": 4.5,
+      "photo": "https://örnek.com/somon.jpg"
+    },
+    {
+      "id": "2",
+      "tile": "Mantar Risotto",
+      "desc": "İtalyan tarzı kremalı mantar risotto.",
+      "category": "Makarna ve Pilavlar",
+      "price": 22.5,
+      "rating": 4.2,
+      "photo": "https://örnek.com/risotto.jpg"
+    },
+    {
+      "id": "3",
+      "tile": "Tavuk Parmesan",
+      "desc": "Kızarmış tavuk göğsü, marinara sos ve mozzarella peyniriyle servis edilir.",
+      "category": "Ana Yemekler",
+      "price": 28.75,
+      "rating": 4.7,
+      "photo": "https://örnek.com/parmesan.jpg"
+    },
+    {
+      "id": "4",
+      "tile": "Çikolatalı Cheesecake",
+      "desc": "Krem peynirli, çikolatalı bir dilim cheesecake.",
+      "category": "Tatlılar",
+      "price": 12.99,
+      "rating": 4.8,
+      "photo": "https://örnek.com/cheesecake.jpg"
+    },
+    {
+      "id": "5",
+      "tile": "Mevsim Salata",
+      "desc": "Taze sebzeler, meyveler ve çeşitli yeşilliklerle hazırlanan mevsim salatası.",
+      "category": "Salatalar",
+      "price": 18.0,
+      "rating": 4.6,
+      "photo": "https://örnek.com/salata.jpg"
+    },
+    {
+      "id": "6",
+      "tile": "Köri Tavuk",
+      "desc": "Hint baharatlarıyla hazırlanmış tavuklu köri.",
+      "category": "Ana Yemekler",
+      "price": 30.5,
+      "rating": 4.4,
+      "photo": "https://örnek.com/kori_tavuk.jpg"
+    },
+    {
+      "id": "7",
+      "tile": "Meksika Taco",
+      "desc": "Mısır tortillası, marine edilmiş dana eti ve çeşitli garnitürlerle hazırlanan taco.",
+      "category": "Atıştırmalıklar",
+      "price": 15.75,
+      "rating": 4.6,
+      "photo": "https://örnek.com/taco.jpg"
+    },
+    {
+      "id": "8",
+      "tile": "Çoban Salata",
+      "desc": "Taze domates, salatalık, biber ve beyaz peynirle hazırlanan lezzetli çoban salatası.",
+      "category": "Salatalar",
+      "price": 16.0,
+      "rating": 4.7,
+      "photo": "https://örnek.com/coban_salata.jpg"
+    },
+    {
+      "id": "9",
+      "tile": "Mango Smoothie",
+      "desc": "Taze mango, yoğurt ve bal ile hazırlanan serinletici smoothie.",
+      "category": "İçecekler",
+      "price": 10.99,
+      "rating": 4.3,
+      "photo": "https://örnek.com/mango_smoothie.jpg"
+    },
+    {
+      "id": "10",
+      "tile": "Fırın Makarna",
+      "desc": "Fırında peynirle gratine edilmiş makarna.",
+      "category": "Makarna ve Pilavlar",
+      "price": 20.25,
+      "rating": 4.5,
+      "photo": "https://örnek.com/makarna.jpg"
+    },
+    {
+      "id": "11",
+      "tile": "Karides Linguine",
+      "desc": "Karides ve sarımsaklı linguine makarna.",
+      "category": "Deniz Ürünleri",
+      "price": 38.5,
+      "rating": 4.8,
+      "photo": "https://örnek.com/karides_linguine.jpg"
+    },
+    {
+      "id": "12",
+      "tile": "Hawaiian Pizza",
+      "desc": "Ananas dilimleri ve jambonlu pizza.",
+      "category": "Pizzalar",
+      "price": 26.99,
+      "rating": 4.5,
+      "photo": "https://örnek.com/hawaiian_pizza.jpg"
+    }
+  ]
+}
