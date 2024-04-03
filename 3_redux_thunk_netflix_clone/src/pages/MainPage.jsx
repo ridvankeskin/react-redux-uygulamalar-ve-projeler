@@ -1,5 +1,19 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { getPopular } from "../redux/actions/movieActions";
+import Hero from "../components/Hero";
+
 const MainPage = () => {
-  return <div>MainPage</div>;
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getPopular());
+  }, []);
+
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 };
 
 export default MainPage;
