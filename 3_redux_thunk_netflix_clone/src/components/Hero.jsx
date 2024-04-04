@@ -1,19 +1,20 @@
 import { useSelector } from "react-redux";
 import Loader from "./Loader";
 import Error from "./Error";
+import { baseImgUrl } from "../constants";
 
 const Hero = () => {
   const { isLoading, error, movies } = useSelector((store) => store.movies);
 
   // 0 - 19 arasında rastgele sayı üret
-  const i = Math.floor(Math.random() * 20);
+  const i = Math.floor(Math.random() * movies.length);
 
   // rastgele üretilen sıradaki elemana eriş
   const movie = movies[i];
-  console.log(movie);
+
   return (
-    <div>
-      {!movie ? (
+    <div className="grid grid-cols-1 md:grid-cols-2 md:max-h-[400px] gap-5 mb-10">
+      {!movie || isLoading ? (
         <Loader />
       ) : error ? (
         <Error />
@@ -26,7 +27,7 @@ const Hero = () => {
               <span>IMDB:</span>
               <span className="text-yellow-400 ms-2 font-semibold">
                 {" "}
-                {movie.vote_average}{" "}
+                {movie.vote_average.toFixed(1)}{" "}
               </span>
             </p>
             <div className="flex gap-5">
@@ -38,7 +39,14 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div></div>
+
+          <div className="flex justify-center">
+            <img
+              className="hero-img my-4 object-contain rounded max-h-[300px]"
+              src={baseImgUrl + movie.backdrop_path}
+              alt=""
+            />
+          </div>
         </>
       )}
     </div>
