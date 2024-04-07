@@ -1,8 +1,23 @@
-# React + Vite
+# Kütüphaneler
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- react-router-dom
+- redux
+- react-redux
+- redux-thunk
+- tailwind
+- axios
+- millify
 
-Currently, two official plugins are available:
+# Kaynaklar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- API:https://developer.themoviedb.org/reference/intro/getting-started
+
+- RESİM ADRESİ:https://image.tmdb.org/t/p/original
+
+Proje adı
+
+<h2>Netflix-Clone</h2>
+
+<h2>GİF</h2>
+
+![](netfilix-clone.gif)
