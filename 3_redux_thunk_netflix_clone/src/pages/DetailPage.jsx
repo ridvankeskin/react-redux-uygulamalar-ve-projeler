@@ -6,6 +6,7 @@ import DetailDisplay from "../components/DetailDisplay";
 import Loader from "./../components/Loader";
 import millify from "millify";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import ActorCart from "../components/ActorCart";
 
 const DetailPage = () => {
   const [movie, setMovie] = useState(null);
@@ -85,24 +86,20 @@ const DetailPage = () => {
 
           {/*TODO alt kısım */}
           <div>
-            {/* <Splide
+            <Splide
               options={{
                 autoWidth: true,
-                gap: '10px',
+                gap: "10px",
                 pagination: false,
                 lazyLoad: true,
               }}
             >
-              {movie.credits.cast.map((actor) => (
+              {movie.credits.cast.map((actor, i) => (
                 <SplideSlide>
-                    <img
-                      className="max-w-[300px] h-full cursor-pointer rounded"
-                      src={baseImgUrl + movie.poster_path}
-                      alt={movie.title}
-                    />
+                  <ActorCart actor={actor} key={i} />
                 </SplideSlide>
               ))}
-            </Splide> */}
+            </Splide>
           </div>
         </div>
       )}
