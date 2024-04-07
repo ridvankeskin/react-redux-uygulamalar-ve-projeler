@@ -1,7 +1,7 @@
 /*
  * Hem reducer'ı
  * Hem reducer'ın aksiyonlarını
- * createSlice methodu ile tek seferde tanımlayacağız
+ * createSlice methodu ile tek seferde tanımlıycağız
 
  ? slice oluşturma
  * import {createSlice} from "@reduxjs/toolkit"
@@ -10,10 +10,10 @@
  - - reducers: aksiyonların görevini tanımladığımız fonksiyonları ifade eder
 */
 
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const counterSlice = createSlice({
-  name: 'counter',
+  name: "counter",
   initialState: { count: 0, isDarkTheme: true },
   // state'in nasıl değişeceğine karar veren fonksiyonları tanımlarız
   reducers: {
@@ -35,9 +35,9 @@ const counterSlice = createSlice({
   },
 });
 
-// slice'ın oluşturduğu reducer fonksiyonunu store'a tanıtmak için export et
+// slice'ın oluşturduğu reducer fonksiyonunu store'a tanıtmak için export edelim
 export default counterSlice.reducer;
 
-// slice'ın olşuşturduğu aksiyon fonksiyonlarını bileşenlerde kullanmak için export et
+// slice'ın olşuşturduğu aksiyon fonksiyonlarını bileşenlerde kullanmak için export edelim
 export const { increase, decrease, setCount, toggleTheme } =
   counterSlice.actions;
