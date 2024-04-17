@@ -23,3 +23,11 @@ Redux toolkit im içerisnde yer alan tek bir noktada hem reducer hem de actionla
 Klasik redux'ta akasiyonları ayrı reducer'ları ayarı dosyalarda tanımlıyorduk.
 
 Toolkit ile birlikte slice içerisinde ikisinide eksiye göre daha az kod yazarak tek noktada oluşturabilicez
+
+<h2>proje adı</h2>
+
+redux toolkit crud
+
+<h2>gif</h2>
+
+![](redux-toolkit.gif)
