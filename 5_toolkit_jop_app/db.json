@@ -1,15 +1,6 @@
 {
   "jobs": [
     {
-      "id": "7a102e12-d734-40bb-b983-f177ec4e35c1",
-      "position": "backend",
-      "company": "İNTERTECT",
-      "location": "Kocaeli, İzmit, Kocaeli, TUR",
-      "status": "Mülakat",
-      "type": "Uzaktan",
-      "date": 1713444338220
-    },
-    {
       "id": "abb2f95c-2cc9-42fe-bbbc-62a48bd3d31d",
       "position": "FRONTEND",
       "company": "İNTERTECT",
@@ -53,6 +44,15 @@
       "status": "Devam Ediyor",
       "type": "Uzaktan",
       "date": 1713444550195
+    },
+    {
+      "id": "2e61c39d-384f-495a-9aa1-174d3eda0fe6",
+      "position": "frontend developer",
+      "company": "turknet",
+      "location": "Kocaeli, İzmit, Kocaeli, TUR",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "date": 1713444903849
     }
   ]
 }

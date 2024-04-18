@@ -9,3 +9,11 @@
 - uuid
 - react-icons
 - sass
+
+<h2>proje adı</h2>
+
+redux toolkit-jop-app
+
+<h2>gif</h2>
+
+![](toolkit-jop-app.gif)
