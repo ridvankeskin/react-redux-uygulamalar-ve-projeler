@@ -1,0 +1,58 @@
+{
+  "jobs": [
+    {
+      "id": "7a102e12-d734-40bb-b983-f177ec4e35c1",
+      "position": "backend",
+      "company": "İNTERTECT",
+      "location": "Kocaeli, İzmit, Kocaeli, TUR",
+      "status": "Mülakat",
+      "type": "Uzaktan",
+      "date": 1713444338220
+    },
+    {
+      "id": "abb2f95c-2cc9-42fe-bbbc-62a48bd3d31d",
+      "position": "FRONTEND",
+      "company": "İNTERTECT",
+      "location": "Kocaeli, İzmit, Kocaeli, TUR",
+      "status": "Devam Ediyor",
+      "type": "Tam Zamanlı",
+      "date": 1713444369307
+    },
+    {
+      "id": "f5952cf8-c70e-494e-af28-8e70f2eb1b07",
+      "position": "frontend developer",
+      "company": "turknet",
+      "location": "Kocaeli, İzmit, Kocaeli, TUR",
+      "status": "Reddedildi",
+      "type": "Tam Zamanlı",
+      "date": 1713444428139
+    },
+    {
+      "id": "66fc5241-36a6-4228-b2b7-fcb5d934fcf5",
+      "position": "ön uc geliştirici",
+      "company": "emaar tech",
+      "location": "Kocaeli, İzmit, Kocaeli, TUR",
+      "status": "Devam Ediyor",
+      "type": "Uzaktan",
+      "date": 1713444476045
+    },
+    {
+      "id": "26588db2-962d-490b-9f2a-039fb199d17f",
+      "position": "frontend developer",
+      "company": "udemig",
+      "location": "Kocaeli, İzmit, Kocaeli, TUR",
+      "status": "Mülakat",
+      "type": "Tam Zamanlı",
+      "date": 1713444514140
+    },
+    {
+      "id": "303de273-d8ff-4285-9d8b-2e13899373f5",
+      "position": "frontend developer eğitmen",
+      "company": "udemig",
+      "location": "istanbul",
+      "status": "Devam Ediyor",
+      "type": "Uzaktan",
+      "date": 1713444550195
+    }
+  ]
+}
