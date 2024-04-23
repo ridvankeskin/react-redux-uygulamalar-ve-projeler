@@ -18,10 +18,10 @@ export const translateText = createAsyncThunk(
   "translate/translateText",
   async (p) => {
     // api'a gönderilecek olan parametreleri belirleme
-    const encodedParams = new URLSearchParams();
-    encodedParams.set("source_language", "auto");
-    encodedParams.set("target_language", "en");
-    encodedParams.set("text", "İsmin Nedir");
+    const params = new URLSearchParams();
+    params.set("source_language", p.sourceLang.value);
+    params.set("target_language", p.targetLang.value);
+    params.set("text", p.text);
 
     // api'a gönderlicek header'ı belirle
     const headers = {
